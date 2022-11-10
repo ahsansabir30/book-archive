@@ -1,4 +1,4 @@
-# Book Archive
+# Books Archive
 ## Technology used
 - MongoDB
 - ExpressJS
