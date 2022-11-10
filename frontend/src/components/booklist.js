@@ -4,7 +4,6 @@ import axios from 'axios';
 
 const Book = props => (
     <div className="card m-2" style={{width: "18rem"}}>
-        <img src="/#" className="card-img-top" alt="temp"/>
         <div className="card-body">
             <h5 className="card-title">{props.book.title}</h5>
             <p className="card-text"></p>
