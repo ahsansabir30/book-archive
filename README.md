@@ -1,5 +1,10 @@
-# book-archive
-MERN STACK
+# Book Archive
+## Technology used
+- MongoDB
+- ExpressJS
+- React
+- NodeJS
+
 
 ## Main Pages
 ![screenshot1](https://user-images.githubusercontent.com/92265482/201169345-743b8799-a394-4877-8748-3ed04210685b.JPG)
