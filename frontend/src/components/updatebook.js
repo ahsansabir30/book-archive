@@ -24,7 +24,7 @@ export default class UpdateBook extends Component {
 
     componentDidMount() {
         const arr = window.location.href.split('/');
-        axios.get('http://localhost:5000/books/'+arr[arr.length-1])
+        axios.get('/backend/books/'+arr[arr.length-1])
           .then(response => {
             this.setState({
               title: response.data.title,
@@ -37,7 +37,7 @@ export default class UpdateBook extends Component {
             console.log(error);
           })
     
-        axios.get('http://localhost:5000/books/')
+        axios.get('/backend/books/')
           .then(response => {
             if (response.data.length > 0) {
               this.setState({
@@ -81,7 +81,7 @@ export default class UpdateBook extends Component {
         }
         console.log(book)
         const arr = window.location.href.split('/');
-        axios.post('http://localhost:5000/books/update/' + arr[arr.length-1], book)
+        axios.post('/backend/books/update/' + arr[arr.length-1], book)
             .then(res => console.log(res.data));
 
         window.location = '/'

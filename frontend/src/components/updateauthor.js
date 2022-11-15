@@ -14,7 +14,7 @@ export default class UpdateAuthor extends Component {
   
     componentDidMount() {
         const arr = window.location.href.split('/');
-        axios.get('http://localhost:5000/authors/'+arr[arr.length-1])
+        axios.get('/backend/authors/'+arr[arr.length-1])
           .then(response => {
             this.setState({
               author: response.data.author,
@@ -38,7 +38,7 @@ export default class UpdateAuthor extends Component {
         }
         console.log(author)
         const arr = window.location.href.split('/');
-        axios.post('http://localhost:5000/authors/update/' + arr[arr.length-1], author)
+        axios.post('/backend/authors/update/' + arr[arr.length-1], author)
             .then(res => console.log(res.data));
 
         window.location = '/'

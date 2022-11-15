@@ -25,7 +25,7 @@ export default class CreateBook extends Component {
         }
         console.log(author)
 
-        axios.post('http://localhost:5000/authors/add', author)
+        axios.post('/backend/authors/add', author)
             .then(res => console.log(res.data));
 
         window.location = '/'

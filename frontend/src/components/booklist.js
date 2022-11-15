@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Book = props => (
-    <div className="card m-2" style={{width: "18rem"}}>
+    <div className="card m-3" style={{width: "18rem"}}>
         <div className="card-body">
             <h5 className="card-title">{props.book.title}</h5>
             <p className="card-text"></p>
@@ -28,7 +28,7 @@ export default class BookList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/books/')
+        axios.get('/backend/books/')
             .then(response => {
                 this.setState({ books: response.data })
             })
@@ -38,7 +38,7 @@ export default class BookList extends Component {
     }
 
     deleteBook(id) {
-        axios.delete('http://localhost:5000/books/'+id)
+        axios.delete('/backend/books/'+id)
             .then(response => console.log(response.data));
         this.setState({
             // el stands for every element

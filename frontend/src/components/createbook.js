@@ -23,7 +23,7 @@ export default class CreateBook extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/authors/')
+        axios.get('/backend/authors/')
             .then(response => {
                 if (response.data.length > 0){
                     this.setState({
@@ -64,7 +64,7 @@ export default class CreateBook extends Component {
         }
         console.log(book)
 
-        axios.post('http://localhost:5000/books/add', book)
+        axios.post('/backend/books/add', book)
             .then(res => console.log(res.data));
 
         window.location = '/'

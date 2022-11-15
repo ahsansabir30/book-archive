@@ -21,7 +21,7 @@ export default class AuthorList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/authors/')
+        axios.get('/backend/authors/')
             .then(response => {
                 this.setState({ authors: response.data })
             })
@@ -31,7 +31,7 @@ export default class AuthorList extends Component {
     }
 
     deleteAuthor(id) {
-        axios.delete('http://localhost:5000/authors/'+id)
+        axios.delete('/backend/authors/'+id)
             .then(response => console.log(response.data));
         this.setState({
             authors: this.state.authors.filter(el => el._id !== id)
