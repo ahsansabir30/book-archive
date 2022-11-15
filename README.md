@@ -15,19 +15,27 @@ Branch (Main)
 1.  Create a database in MongoDB
 2.  Create .env file in the backend folder
 3.  Copy connection string from MongoDB and paste into the .env file as follows
-     ATLAS_URI="mongodb://<user>:<password>@<host>:<port>" 
+
+ATLAS_URI="mongodb://<user>:<password>@<host>:<port>" 
+
 4.  In terminal cd into frontend folder and run the command
-    npm start
+    
+npm start
   
 Branch (Docker)
 1.  Create a database in MongoDB
 2.  Create a .env file in the project directory 
 3.  Copy connection string from MongoDB and paste into the .env file as follows
-    ATLAS_URI="mongodb://<user>:<password>@<host>:<port>" 
+    
+ATLAS_URI="mongodb://<user>:<password>@<host>:<port>" 
+
 4.  To build the docker images, run the command:
-    docker-compose build
+
+docker-compose build
+
 5.  To start the application 
-    docker-compose up
+     
+docker-compose up
   
 ## Application
 ### Main Pages
