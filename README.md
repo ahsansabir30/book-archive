@@ -1,10 +1,12 @@
 # Books Archive
+Stores and holds information about Books
+
 ## Technology used
 - MongoDB
 - ExpressJS
 - React
 - NodeJS
-
+- Bootstrap
 
 ## Main Pages
 ![screenshot1](https://user-images.githubusercontent.com/92265482/201169345-743b8799-a394-4877-8748-3ed04210685b.JPG)
