@@ -16,7 +16,7 @@ Branch (Main)
 2.  Create .env file in the backend folder
 3.  Copy connection string from MongoDB and paste into the .env file as follows
 
-ATLAS_URI="mongodb://<user>:<password>@<host>:<port>" 
+ATLAS_URI="connection string" 
 
 4.  In terminal cd into frontend folder and run the command
     
@@ -27,7 +27,7 @@ Branch (Docker)
 2.  Create a .env file in the project directory 
 3.  Copy connection string from MongoDB and paste into the .env file as follows
     
-ATLAS_URI="mongodb://<user>:<password>@<host>:<port>" 
+ATLAS_URI="connection string" 
 
 4.  To build the docker images, run the command:
 
