@@ -19,9 +19,11 @@ Branch (Main)
 ATLAS_URI="connection string" 
 
 4.  In terminal cd into frontend folder and run the command
-    
+
+```bash
 npm start
-  
+```
+
 Branch (Docker)
 1.  Create a database in MongoDB
 2.  Create a .env file in the project directory 
@@ -31,12 +33,16 @@ ATLAS_URI="connection string"
 
 4.  To build the docker images, run the command:
 
+```bash
 docker-compose build
+```
 
 5.  To start the application 
-     
+
+```bash
 docker-compose up
-  
+``` 
+
 ## Application
 ### Main Pages
 ![screenshot1](https://user-images.githubusercontent.com/92265482/201169345-743b8799-a394-4877-8748-3ed04210685b.JPG)
